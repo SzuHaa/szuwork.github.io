@@ -1,0 +1,111 @@
+body {
+  background: #fff;
+}
+
+.contact-wrap {
+  margin-top: 120px;
+}
+@media screen and (max-width: 575px) {
+  .contact-wrap {
+    margin-top: 47px;
+  }
+}
+.contact-wrap h1.contact-title {
+  font-size: 24px;
+  text-align: center;
+  padding: 50px 0 40px 0;
+  color: #212121;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.contact-wrap ul.contact-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 30px;
+}
+.contact-wrap ul.contact-list li.item {
+  flex-basis: calc(33.3333% - 20px);
+  border-radius: 10px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.16);
+  background: #fff;
+  padding: 30px 24px;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .contact-wrap ul.contact-list li.item {
+    flex-basis: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 575px) {
+  .contact-wrap ul.contact-list li.item {
+    flex-basis: 100%;
+  }
+}
+.contact-wrap ul.contact-list li.item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 115px;
+  margin-bottom: 16px;
+}
+.contact-wrap ul.contact-list li.item h2 {
+  color: #0063a7;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.contact-wrap ul.contact-list li.item .info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact-wrap ul.contact-list li.item .info li {
+  display: flex;
+  gap: 16px;
+  line-height: 1.6;
+}
+.contact-wrap ul.contact-list li.item .info li u {
+  flex: 0 0 65px;
+  font-weight: 500;
+}
+.contact-wrap ul.contact-list li.item .info li p {
+  flex: 1;
+}
+@media screen and (min-width: 576px) {
+  .contact-wrap ul.contact-list li.item .info li p.isPC {
+    display: inline;
+  }
+  .contact-wrap ul.contact-list li.item .info li p.isMobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 575px) {
+  .contact-wrap ul.contact-list li.item .info li p.isPC {
+    display: none;
+  }
+  .contact-wrap ul.contact-list li.item .info li p.isMobile {
+    display: inline;
+  }
+}
+.contact-wrap ul.contact-list li.item .info li p a {
+  color: #424242;
+  text-decoration: underline;
+}
+.contact-wrap ul.contact-list li.item.for-abroad::before {
+  background: url("https://www.ezfly.com/contact/img/icon-contact-abroad.png") no-repeat center/auto 100%;
+}
+.contact-wrap ul.contact-list li.item.for-taiwan::before {
+  background: url("https://www.ezfly.com/contact/img/icon-contact-taiwan.png") no-repeat center/auto 100%;
+}
+.contact-wrap ul.contact-list li.item.for-ticket::before {
+  background: url("https://www.ezfly.com/contact/img/icon-contact-ticket.png") no-repeat center/auto 100%;
+}
+.contact-wrap ul.contact-list li.item.for-member::before {
+  background: url("https://www.ezfly.com/contact/img/icon-contact-member.png") no-repeat center/auto 100%;
+}
+.contact-wrap ul.contact-list li.item.for-b2b::before {
+  background: url("https://www.ezfly.com/contact/img/icon-contact-b2b.png") no-repeat center/auto 100%;
+}

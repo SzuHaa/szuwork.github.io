@@ -1,0 +1,55 @@
+.visitorOrder-form {
+  width: 500px;
+  margin: 122px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 50px;
+}
+@media screen and (max-width: 575px) {
+  .visitorOrder-form {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+.visitorOrder-form .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212121;
+}
+.visitorOrder-form .formType-regular {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.visitorOrder-form .formType-regular .input-group {
+  flex-direction: column;
+  gap: 6px;
+}
+.visitorOrder-form .formType-regular .input-group label {
+  font-size: 14px;
+  color: #616161;
+}
+.visitorOrder-form .formType-regular .input-group .form-control {
+  width: 100%;
+}
+.visitorOrder-form .formType-regular .input-group .form-text {
+  display: none;
+}
+.visitorOrder-form .formType-regular .input-group.error .form-text {
+  display: block;
+}
+.visitorOrder-form .notice {
+  margin-top: -10px;
+  font-size: 14px;
+  color: #424242;
+  text-align: left;
+  width: 100%;
+}
+.visitorOrder-form .notice a {
+  color: #0063a7;
+  text-decoration: underline;
+}

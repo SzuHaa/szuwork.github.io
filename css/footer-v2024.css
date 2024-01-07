@@ -1,0 +1,183 @@
+footer.footer {
+  margin-top: 150px;
+  background: #f3faff;
+  color: #616161;
+  border-top: 1px solid #e0e0e0;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  footer.footer {
+    margin-top: 36px;
+  }
+}
+@media screen and (max-width: 575px) {
+  footer.footer {
+    margin-top: 68px;
+  }
+}
+footer.footer .footerbox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 35px 0 20px 0;
+  font-size: 14px;
+}
+footer.footer .footerbox .isMobile {
+  display: none;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  footer.footer .footerbox {
+    flex-wrap: wrap;
+    padding: 30px 0 40px 0;
+    gap: 20px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  footer.footer .footerbox {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  footer.footer .footerbox .isPc {
+    display: none;
+  }
+  footer.footer .footerbox .isMobile {
+    display: inline-block;
+  }
+}
+footer.footer .footerbox .item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  footer.footer .footerbox .item {
+    flex-basis: 50%;
+  }
+  footer.footer .footerbox .item:nth-child(3) {
+    margin-top: -80px;
+  }
+}
+@media screen and (max-width: 575px) {
+  footer.footer .footerbox .item:nth-child(1) {
+    order: 1;
+  }
+  footer.footer .footerbox .item:nth-child(2) {
+    order: 3;
+  }
+  footer.footer .footerbox .item:nth-child(3) {
+    order: 2;
+  }
+  footer.footer .footerbox .item:nth-child(4) {
+    order: 4;
+  }
+}
+footer.footer .footerbox .item a {
+  margin-right: 16px;
+  color: #616161;
+}
+footer.footer .footerbox .item a:hover {
+  color: #0063A7;
+}
+footer.footer .footerbox .item.hasLogo {
+  gap: 20px;
+}
+footer.footer .footerbox .item dl {
+  line-height: 1.6;
+}
+footer.footer .footerbox .item dl dd {
+  margin: 0;
+}
+footer.footer .footerbox .item dl dd.hasIcon {
+  display: flex;
+  align-items: center;
+}
+footer.footer .footerbox .item dl dd.hasIcon a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+  margin-top: 5px;
+}
+footer.footer .footerbox .item dl dd.hasIcon a::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+}
+footer.footer .footerbox .item dl dd.hasIcon a.phone::before {
+  background: url("https://www.ezfly.com/v2024/img/icon/icon-phone.png") no-repeat center/cover;
+}
+footer.footer .footerbox .item dl dd.hasIcon a.email::before {
+  background: url("https://www.ezfly.com/v2024/img/icon/icon-email.png") no-repeat center/cover;
+}
+footer.footer .footerbox .item dl dd.hasIcon a.phone:hover::before {
+  background: url("https://www.ezfly.com/v2024/img/icon/icon-phone-hover.png") no-repeat center/cover;
+}
+footer.footer .footerbox .item dl dd.hasIcon a.email:hover::before {
+  background: url("https://www.ezfly.com/v2024/img/icon/icon-email-hover.png") no-repeat center/cover;
+}
+footer.footer .footerbox .item dl dd.link {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer.footer .footerbox .item a.ezflyLogo {
+  display: block;
+  height: 35px;
+  width: 158px;
+  background: var(--ezfly-logo) no-repeat top left/contain;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  footer.footer .footerbox .item a.ezflyLogo {
+    margin-bottom: -10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  footer.footer .footerbox .item a.ezflyLogo {
+    display: none;
+  }
+}
+footer.footer .footerbox .item .certificate {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+footer.footer .footerbox .item .certificate img {
+  max-width: 50px;
+  max-height: 50px;
+}
+footer.footer .footerbox .item a[href^="tel:"] {
+  text-decoration: underline;
+}
+footer.footer .footer-copyright {
+  text-align: left;
+  padding: 20px 0 25px 0;
+  word-break: keep-all;
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #212121;
+}
+footer.footer .btn-gotop {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--icon-gotop) no-repeat center/auto 50%, rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  cursor: pointer;
+}
+@media screen and (max-width: 575px) {
+  footer.footer .btn-gotop {
+    display: none !important;
+  }
+}
+footer.footer .btn-gotop:hover {
+  background: var(--icon-gotop-hover) no-repeat center/auto 50%, #fff;
+}
+@media screen and (max-width: 575px) {
+  footer.footer .btn-gotop {
+    display: none;
+  }
+}
